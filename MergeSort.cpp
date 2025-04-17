@@ -1,23 +1,42 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-// Create main and temporary array
-int arr[20], B[20];
+// create main array & temporary array
+int arr[20], B[20]; 
+// n is array input size
 int n;
 
 void input() {
-    while (true) {
-        cout << "Enter the number of elements in the array: ";
+    while (true) 
+    {
+        cout << "Masukkan Panjang element array : ";
         cin >> n;
-        if (n <= 20) break;
-        else cout << "Please enter a number less than or equal to 20." << endl;
-    }
+        if (n <= 20) 
+        {
+            break;
+        }
+        else 
+        {
+            cout << "\nMaksimal panjang array adalah 20";
+        }
+        cout << "\n-----------------------" << endl;
+        cout << "\n\nInputkan Isi element array " << endl;
+        cout << "\n-----------------------" << endl;
 
-    cout << "Enter the elements of the array: ";
-    for (int i = 0; i < n; i++) {
-        cin >> arr[i];
+        for (int i = 0; i < n; i++) 
+        {
+            cout << "Array index ke- " << i << " : ";
+            cin >> arr[i];
+        }
     }
 }
 
-// Create function to merge two sorted arrays
-void mergesort(int low, int high) { 
+// create function mergeSort
+void mergeSort(int low, int high) 
+{
+    if (low >= high) // step 1
+    { 
+        return;       // step 1.a
+    }
+
+}
